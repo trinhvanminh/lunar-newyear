@@ -1,1 +1,1 @@
-# lunar-newyear
+# lunar-new-year
