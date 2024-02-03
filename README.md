@@ -14,6 +14,7 @@ Page 2: Display nine envelopes
 Page 3: Display three button: "nhận lì xì", "chê" and hidden button with random of position
 
 - If user found the hidden button, show the QR code to user donate.
-- If user can click the "nhận lì xì" button, show the tip to guide the user found the hidden button
-- On the lucky money QR page there is a countdown timer, from 45 seconds to 30 seconds a send button will appear. If you press the button, the troll sentence will appear.
-- If the time runs out and you don't press the button, you will regret the money you lost. In fact, you can deposit money or not.
+- If user can click on the "nhận lì xì" button, show the tip to guide the user found the hidden button
+- If use can click on the hidden button, the QR dialog will appear.
+
+Should have animation "fireworks" or "congratulation" when click on button.
