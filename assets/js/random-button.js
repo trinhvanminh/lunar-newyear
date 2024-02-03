@@ -1,10 +1,12 @@
 const BUTTON_OK_SELECTOR = "#btnOk";
 const BUTTON_CANCEL_SELECTOR = "#btnCancel";
-const CARD_BODY_SELECTOR = ".card-body";
 
 $(document).ready(() => {
   function moveButtonRandomly(button) {
-    const { top, left } = $(BUTTON_CANCEL_SELECTOR).offset();
+    const { top, left } = $(BUTTON_CANCEL_SELECTOR).offset() || {
+      top: 0,
+      left: 0,
+    };
 
     const newX = Math.random() * (window.innerWidth - button.clientWidth);
     const newY = Math.random() * (window.innerHeight - button.clientHeight);
@@ -21,17 +23,10 @@ $(document).ready(() => {
     button.style.top = newY + "px";
   }
 
-  $(BUTTON_OK_SELECTOR).on("mouseenter", function () {
+  function raiseRandomPositionEvent() {
     moveButtonRandomly(this);
-  });
+  }
 
-  $(BUTTON_OK_SELECTOR).on("click", function () {
-    moveButtonRandomly(this);
-  });
-
-  $(BUTTON_CANCEL_SELECTOR).click(function () {
-    $(CARD_BODY_SELECTOR).html(
-      'Hy vọng bạn sẽ không phải cảm thấy bất tiện vì quyết định của mình. Chúc bạn một năm mới tràn đầy niềm vui và hạnh phúc! <h2 class="pt-2">Chúc mừng năm mới.</h2>'
-    );
-  });
+  $(BUTTON_OK_SELECTOR).on("mouseenter", raiseRandomPositionEvent);
+  $(BUTTON_OK_SELECTOR).on("click", raiseRandomPositionEvent);
 });
