@@ -1,0 +1,29 @@
+{
+  "short_name": "2024",
+  "name": "Happy New Year 2024",
+  "description": "Welcome to 2024! Wishing you a year filled with joy, success, and endless possibilities. Happy New Year!",
+  "icons": [
+    {
+      "src": "/favicon128x128.png",
+      "type": "image/png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "/favicon64x64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "/favicon256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    }
+  ],
+  "id": "/",
+  "scope": "/",
+  "start_url": "/",
+  "background_color": "#feebdd",
+  "theme_color": "#feebdd",
+  "display": "standalone",
+  "orientation": "landscape"
+}
