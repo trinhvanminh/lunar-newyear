@@ -3,8 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" type="image/x-icon" href="/favicon64x64.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -16,23 +27,55 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Lunar New Year 2024</title>
   </head>
-  <body>
-    <div class="bg-[#feebdd] w-[100vw] h-[100vh]">
-      <div
-        class="bg-[url('/assets/images/dragon-lunar.jpg')] bg-no-repeat bg-contain bg-center w-full h-full"
-      >
-        <h1 class="text-3xl font-bold underline">Hello world!</h1>
-        <ul>
-          <li class="text-blue-400">Tailwindcss</li>
-          <li id="jquery" class="underline cursor-pointer">Jquery</li>
-          <li><i class="fa-regular fa-heart"></i> Font awesome</li>
-        </ul>
+  <body
+    class="bg-[url('/assets/images/bg-nam-moi.svg')] bg-cover bg-no-repeat bg-center relative"
+  >
+    <div class="w-[100vw] h-[100vh] flex flex-col justify-center items-center">
+      <h1 class="text-3xl font-bold text-center p-8 text-[#a21c2e]">
+        Chúc mừng năm mới 2024
+      </h1>
+      <div class="card w-[40%] rounded-2xl bg-white text-[#562805]">
+        <div class="card-body p-8">
+          <p>
+            Năm mới sẽ mang lại cho bạn những cơ hội, những thách thức và những
+            niềm vui mới.
+          </p>
+          <p class="pt-2">
+            Bạn sẽ được trải nghiệm những niềm vui bất tận, những thành công rực
+            rỡ và những khoảnh khắc đáng nhớ bên người thân yêu.
+          </p>
+          <p class="pt-2">
+            Hãy tự tin bước vào năm mới với lòng can đảm và hy vọng lớn lao!
+          </p>
+        </div>
+        <div class="card-action p-8 pt-0 flex justify-between">
+          <button
+            id="btnOk"
+            type="button"
+            class="focus:outline-none text-white bg-green-600 hover:bg-green-700 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-green-500 dark:hover:bg-green-600 dark:focus:ring-green-700 shadow-lg shadow-white"
+          >
+            <span class="flex gap-2 justify-center items-center">
+              <img class="w-5" src="/assets/images/fire-cracker.png" />
+              <span>Nhận lì xì</span>
+            </span>
+          </button>
+          <div class="flex-1"></div>
+          <button
+            id="btnCancel"
+            type="button"
+            class="focus:outline-none text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-500 dark:hover:bg-red-600 dark:focus:ring-red-800"
+          >
+            <span class="flex gap-2 justify-center items-center">
+              <img class="w-5" src="/assets/images/gold.png" />
+              <span>Chê nha!</span>
+            </span>
+          </button>
+        </div>
       </div>
     </div>
 
@@ -43,6 +86,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="./assets/js/index.js"></script>
+    <script src="/assets/js/play-audio.js"></script>
+    <script src="/assets/js/random-button.js"></script>
   </body>
 </html>
