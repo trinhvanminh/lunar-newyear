@@ -1,6 +1,3 @@
-const BUTTON_OK_SELECTOR = "#btnOk";
-const BUTTON_CANCEL_SELECTOR = "#btnCancel";
-
 $(document).ready(() => {
   function moveButtonRandomly(button) {
     const { top, left } = $(BUTTON_CANCEL_SELECTOR).offset() || {
