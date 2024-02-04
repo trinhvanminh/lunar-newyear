@@ -12,11 +12,7 @@ $(window).on("load", () => {
   }
 
   function pause() {
-    lunarAudio.pause().catch(() => {
-      console.error(
-        "Audio was disabled by Chrome policy, https://developer.chrome.com/blog/autoplay/"
-      );
-    });
+    lunarAudio.pause();
 
     $(BUTTON_PAUSE_AUDIO_SELECTOR).removeClass("active");
   }
