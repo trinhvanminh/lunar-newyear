@@ -1,6 +1,4 @@
-const lunarAudio = new Audio(
-  "/lunar-newyear/assets/music/ngay-xuan-long-phung-sum-vay.mp3"
-);
+const lunarAudio = new Audio("/assets/music/ngay-xuan-long-phung-sum-vay.mp3");
 $(window).on("load", () => {
   function play() {
     lunarAudio.play().catch(() => {
