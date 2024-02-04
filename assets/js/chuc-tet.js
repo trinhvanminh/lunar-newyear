@@ -46,6 +46,10 @@ $(document).ready(() => {
 
   for (var i = 0; i < 8; i++) {
     $(`#envelope-${i + 1}`).click(function () {
+      if ($(BUTTON_PAUSE_AUDIO_SELECTOR).hasClass("hidden")) {
+        play();
+      }
+
       // TODO: giải đố để qua trang tiếp theo
       $(this).removeClass(
         "transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
