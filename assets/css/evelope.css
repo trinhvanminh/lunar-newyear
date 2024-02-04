@@ -1,0 +1,100 @@
+.envelope {
+  position: relative;
+  cursor: pointer;
+}
+
+.back {
+  position: relative;
+  width: 250px;
+  height: 200px;
+  background-color: var(--back);
+}
+
+.letter {
+  position: absolute;
+  background-color: #fff;
+  width: 230px;
+  height: 180px;
+  top: 10px;
+  left: 10px;
+  transition: 0.2s;
+  border-radius: 4px;
+}
+
+.text {
+  text-align: center;
+  font-size: 17px;
+  font-family: arial;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.front {
+  position: absolute;
+  border-right: 130px solid var(--front-left-right);
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  height: 0;
+  width: 0;
+  top: 0;
+  left: 120px;
+  z-index: 3;
+}
+
+.front:before {
+  content: "";
+  position: absolute;
+  border-left: 130px solid var(--front-left-right);
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  height: 0;
+  width: 0;
+  top: -100px;
+  left: -120px;
+}
+
+.front:after {
+  content: "";
+  position: absolute;
+  border-bottom: 105px solid var(--front-bottom);
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent;
+  height: 0;
+  width: 0;
+  top: -5px;
+  left: -120px;
+}
+
+.top {
+  position: absolute;
+  border-top: 105px solid var(--top);
+  border-left: 125px solid transparent;
+  border-right: 125px solid transparent;
+  height: 0;
+  width: 0;
+  top: 0;
+  transform-origin: top;
+  transition: 0.4s;
+}
+
+.shadow {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 250px;
+  height: 10px;
+  top: 220px;
+  border-radius: 50%;
+}
+
+.envelope:hover {
+  z-index: 3;
+}
+
+.envelope:hover .top {
+  transform: rotateX(160deg);
+}
+
+.envelope:hover .letter {
+  transform: translateY(-100px);
+  z-index: 2;
+}

@@ -4,3 +4,10 @@ body {
   padding: 0;
   margin: 0;
 }
+
+:root {
+  --back: #cb3541;
+  --front-bottom: #ba3243;
+  --front-left-right: #cb3541;
+  --top: #fa5347;
+}

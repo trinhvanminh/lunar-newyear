@@ -21,6 +21,7 @@
     />
 
     <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/evelope.css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Lunar New Year 2024</title>
@@ -73,9 +74,87 @@
   <body
     class="bg-[url('../assets/images/bg-nam-moi.svg')] bg-cover bg-no-repeat bg-center relative"
   >
-    <div class="w-[100vw] h-[100vh] flex flex-col justify-center items-center">
-      <h1>hello</h1>
-    </div>
+    <main class="w-[100vw] h-[100vh] flex flex-col justify-center items-center">
+      <h1 class="text-3xl font-bold text-center p-8 text-[#a21c2e] mb-20">
+        <b
+          ><a href="/chuc-mung" class="cursor-pointer hover:underline"
+            >Chúc mừng</a
+          ></b
+        >
+        <b
+          ><a href="/nam-moi" class="cursor-pointer hover:underline"
+            >năm mới</a
+          ></b
+        >
+        2024
+      </h1>
+      <div class="cards flex justify-center items-center gap-4 flex-wrap">
+        <div id="envelope-1" class="envelope">
+          <div class="back"></div>
+          <div class="letter h-[180px]">
+            <div class="text">Congratulation</div>
+            <div class="flex justify-center w-full h-[140px]">
+              <img
+                class="object-cover"
+                src="../assets/images/dragons/water-dragon-transformed.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="front"></div>
+          <div class="top"></div>
+          <div class="shadow"></div>
+        </div>
+        <div id="envelope-2" class="envelope">
+          <div class="back"></div>
+          <div class="letter h-[180px]">
+            <div class="text">Congratulation</div>
+            <div class="flex justify-center w-full h-[140px]">
+              <img
+                class="object-cover"
+                src="../assets/images/dragons/fire-dragon-transformed.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="front"></div>
+          <div class="top"></div>
+          <div class="shadow"></div>
+        </div>
+        <div id="envelope-3" class="envelope">
+          <div class="back"></div>
+          <div class="letter h-[180px]">
+            <div class="text">Congratulation</div>
+            <div class="flex justify-center w-full h-[140px]">
+              <img
+                class="object-cover"
+                src="../assets/images/dragons/plant-dragon-transformed.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="front"></div>
+          <div class="top"></div>
+          <div class="shadow"></div>
+        </div>
+        <div id="envelope-4" class="envelope">
+          <div class="back"></div>
+          <div class="letter h-[180px]">
+            <div class="text">Good luck</div>
+            <div class="flex justify-center w-full h-[140px]">
+              <img
+                class="object-cover"
+                src="../assets/images/dragons/dragon-meme.gif"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="front"></div>
+          <div class="top"></div>
+          <div class="shadow"></div>
+        </div>
+      </div>
+    </main>
     <!-- jquery -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -83,6 +162,5 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="../assets/js/play-audio.js"></script>
   </body>
 </html>
