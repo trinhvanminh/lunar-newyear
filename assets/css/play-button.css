@@ -2,8 +2,9 @@
   align-items: center;
   display: flex;
   justify-content: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
+
 .pause-bottom {
   background: #f4471f;
   border-radius: 50%;
@@ -16,21 +17,25 @@
   position: absolute;
   width: 5vw;
 }
+
 .pause-button:active .pause-bottom {
   background: #e93c15;
 }
+
 .pause-icon {
   height: 10vw;
   transform: rotate(-120deg);
   transition: transform 500ms;
   width: 10vw;
 }
+
 .pause-part {
   background: white;
   height: 10vw;
   position: absolute;
   width: 10vw;
 }
+
 .pause-left {
   clip-path: polygon(
     43.77666% 55.85251%,
@@ -100,6 +105,7 @@
   );
   transition: clip-path 500ms;
 }
+
 .pause-right {
   clip-path: polygon(
     43.77666% 43.83035%,
@@ -169,17 +175,20 @@
   );
   transition: clip-path 500ms;
 }
+
 .pause-pointer {
   border-radius: 50%;
   cursor: pointer;
-  height: 80px;
+  height: 5vw;
   position: absolute;
   -webkit-tap-highlight-color: transparent;
-  width: 80px;
+  width: 5vw;
 }
+
 .active .pause-icon {
   transform: rotate(-90deg);
 }
+
 .active .pause-left {
   clip-path: polygon(
     56.42249% 57.01763%,
@@ -248,6 +257,7 @@
     56.87342% 56.99471%
   );
 }
+
 .active .pause-right {
   clip-path: polygon(
     56.42249% 42.44625%,

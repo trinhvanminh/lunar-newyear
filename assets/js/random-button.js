@@ -10,6 +10,7 @@ $(document).ready(() => {
     const distance = Math.sqrt(
       Math.pow(newX - top, 2) + Math.pow(newY - left, 2)
     );
+
     if (distance < 100) {
       moveButtonRandomly(button);
       return;

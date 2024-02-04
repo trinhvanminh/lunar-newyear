@@ -10,4 +10,6 @@ $(document).ready(() => {
 
     count++;
   });
+
+  $(CARD_BODY_SELECTOR).html(rejectMessages[3]);
 });
