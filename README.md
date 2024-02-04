@@ -4,7 +4,7 @@
 
 Page 1: Input your name
 
-Page 2: Display nine envelopes
+Page 2: Display eight envelopes
 
 - Including 1 bag for configuring the puzzle, decoding, receiving 1 cup of coffee and sending email notification to email
   1 bag to go to the next page
