@@ -2,6 +2,7 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 .pause-bottom {
   background: #f4471f;
@@ -11,24 +12,24 @@
     0 7.8px 17.9px rgba(0, 0, 0, 0.059), 0 14.6px 33.4px rgba(0, 0, 0, 0.059),
     0 35px 80px rgba(0, 0, 0, 0.07);
   cursor: pointer;
-  height: 80px;
+  height: 5vw;
   position: absolute;
-  width: 80px;
+  width: 5vw;
 }
 .pause-button:active .pause-bottom {
   background: #e93c15;
 }
 .pause-icon {
-  height: 150px;
+  height: 10vw;
   transform: rotate(-120deg);
   transition: transform 500ms;
-  width: 150px;
+  width: 10vw;
 }
 .pause-part {
   background: white;
-  height: 150px;
+  height: 10vw;
   position: absolute;
-  width: 150px;
+  width: 10vw;
 }
 .pause-left {
   clip-path: polygon(
@@ -171,10 +172,10 @@
 .pause-pointer {
   border-radius: 50%;
   cursor: pointer;
-  height: 100px;
+  height: 80px;
   position: absolute;
   -webkit-tap-highlight-color: transparent;
-  width: 100px;
+  width: 80px;
 }
 .active .pause-icon {
   transform: rotate(-90deg);

@@ -38,13 +38,4 @@ $(window).on("load", () => {
       pause();
     }
   });
-
-  // lunarAudio.play().catch(() => {
-  //   console.log(
-  //     "Auto play was disabled by Chrome policy, https://developer.chrome.com/blog/autoplay/"
-  //   );
-  //   $(document.body).on("click", () => {
-  //     lunarAudio.play();
-  //   });
-  // });
 });
