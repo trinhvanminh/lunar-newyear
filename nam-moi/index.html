@@ -28,6 +28,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/play-button.css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Lunar New Year 2024</title>
@@ -78,6 +79,34 @@
         </div>
       </div>
     </main>
+    <div class="absolute audio bottom-5 right-5">
+      <div
+        id="btnPauseAudio"
+        class="pause-button hidden"
+        onclick="this.classList.toggle('active')"
+      >
+        <div class="pause-bottom" x="0" y="0" width="200" height="200"></div>
+        <div class="pause-icon" width="200" height="200">
+          <div
+            class="pause-part pause-left"
+            x="0"
+            y="0"
+            width="200"
+            height="200"
+            fill="#fff"
+          ></div>
+          <div
+            class="pause-part pause-right"
+            x="0"
+            y="0"
+            width="200"
+            height="200"
+            fill="#fff"
+          ></div>
+        </div>
+        <div class="pause-pointer"></div>
+      </div>
+    </div>
 
     <!-- jquery -->
     <script
