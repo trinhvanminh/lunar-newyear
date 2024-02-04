@@ -12,9 +12,7 @@
     0 7.8px 17.9px rgba(0, 0, 0, 0.059), 0 14.6px 33.4px rgba(0, 0, 0, 0.059),
     0 35px 80px rgba(0, 0, 0, 0.07);
   cursor: pointer;
-  height: 5vw;
   position: absolute;
-  width: 5vw;
 }
 
 .pause-button:active .pause-bottom {
@@ -22,17 +20,13 @@
 }
 
 .pause-icon {
-  height: 10vw;
-  transform: rotate(-120deg);
+  transform: rotate(-120deg) scale(1.5);
   transition: transform 500ms;
-  width: 10vw;
 }
 
 .pause-part {
   background: white;
-  height: 10vw;
   position: absolute;
-  width: 10vw;
 }
 
 .pause-left {
@@ -178,14 +172,12 @@
 .pause-pointer {
   border-radius: 50%;
   cursor: pointer;
-  height: 5vw;
   position: absolute;
   -webkit-tap-highlight-color: transparent;
-  width: 5vw;
 }
 
 .active .pause-icon {
-  transform: rotate(-90deg);
+  transform: rotate(-90deg) scale(1.5);
 }
 
 .active .pause-left {
