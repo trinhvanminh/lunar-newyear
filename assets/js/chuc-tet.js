@@ -50,7 +50,6 @@ $(document).ready(() => {
         play();
       }
 
-      // TODO: giải đố để qua trang tiếp theo
       $(this).removeClass(
         "transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
       );
