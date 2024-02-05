@@ -18,6 +18,7 @@
     />
 
     <link rel="stylesheet" href="../assets/css/styles.css" />
+    <link rel="stylesheet" href="../assets/css/play-button.css" />
     <link rel="stylesheet" href="../assets/css/evelope.css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -138,6 +139,18 @@
         </div>
       </div>
     </main>
+
+    <div class="absolute bottom-[5%] right-[5%]">
+      <div id="btnPauseAudio" class="pause-button hidden">
+        <div class="pause-bottom w-[50px] h-[50px] lg:w-[70px] lg:h-[70px]"></div>
+        <div class="pause-icon w-[50px] h-[50px] lg:w-[70px] lg:h-[70px]">
+          <div class="pause-part w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] pause-left" fill="#fff"></div>
+          <div class="pause-part w-[50px] h-[50px] lg:w-[70px] lg:h-[70px] pause-right" fill="#fff"></div>
+        </div>
+        <div class="pause-pointer w-[50px] h-[50px] lg:w-[70px] lg:h-[70px]"></div>
+      </div>
+    </div>
+
     <!-- jquery -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -146,6 +159,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script src="../assets/js/global-variables.js"></script>
     <script src="../assets/js/chuc-mung.js"></script>
     <script src="../assets/js/console-log-funny-text.js"></script>
   </body>

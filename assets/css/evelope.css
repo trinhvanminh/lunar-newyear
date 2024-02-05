@@ -22,6 +22,10 @@
   border-radius: 4px;
 }
 
+.envelope.prize:hover .letter {
+  top: -10px;
+}
+
 .text {
   text-align: center;
   font-size: 17px;
