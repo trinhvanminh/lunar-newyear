@@ -1,6 +1,7 @@
 .envelope {
   position: relative;
   cursor: pointer;
+  z-index: 1;
 }
 
 .back {
@@ -86,15 +87,29 @@
   border-radius: 50%;
 }
 
-.envelope:hover {
+.envelope-container:hover {
   z-index: 3;
+  animation: action 0.5s infinite alternate;
 }
 
-.envelope:hover .top {
+.envelope.open .envelope-container:hover:hover {
+  animation: none;
+}
+
+@keyframes action {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.envelope.open .top {
   transform: rotateX(160deg);
 }
 
-.envelope:hover .letter {
+.envelope.open .letter {
   transform: translateY(-100px);
   z-index: 2;
 }
