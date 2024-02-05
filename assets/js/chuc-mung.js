@@ -8,7 +8,7 @@ const MAGIC_NUMBER = 1;
 
 const TOTAL_CARDS = 4;
 
-const EXPECT_WIN_PERCENT = 1;
+const EXPECT_WIN_PERCENT = 0.2;
 
 const TOTAL_RANDOM_NUMBER = Math.floor(TOTAL_CARDS / EXPECT_WIN_PERCENT);
 
@@ -54,7 +54,7 @@ $("[id^=envelope]").each(function () {
     playAudio();
 
     const letterElm = $(this).children().children(".letter");
-    const randNum = Math.floor(Math.random() * TOTAL_RANDOM_NUMBER);
+    const randNum = Math.floor(Math.random() * TOTAL_RANDOM_NUMBER + 1);
 
     $(this).addClass("open");
 
