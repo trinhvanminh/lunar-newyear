@@ -10,7 +10,7 @@ const TOTAL_CARDS = 4;
 
 const EXPECT_WIN_PERCENT = 0.2;
 
-const TOTAL_RANDOM_NUMBER = TOTAL_CARDS / EXPECT_WIN_PERCENT;
+const TOTAL_RANDOM_NUMBER = Math.floor(TOTAL_CARDS / EXPECT_WIN_PERCENT);
 
 const bingo = {
   text: "Chúc mừng bạn!",
