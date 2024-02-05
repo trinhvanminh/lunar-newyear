@@ -8,9 +8,11 @@ const MAGIC_NUMBER = 1;
 
 const TOTAL_CARDS = 4;
 
-const EXPECT_WIN_PERCENT = 0.2;
+const EXPECT_WIN_PERCENT = 1;
 
 const TOTAL_RANDOM_NUMBER = Math.floor(TOTAL_CARDS / EXPECT_WIN_PERCENT);
+
+const PRIZE_MODAL = "#prize-modal";
 
 const bingo = {
   text: "Chúc mừng bạn!",
@@ -79,8 +81,10 @@ $("[id^=envelope]").each(function () {
 
     $(letterElm).find("img").attr("src", imageSrc);
 
-    $(letterElm).on("click", function () {
-      window.location.href = "/nam-moi";
+    const modal = new Modal($(PRIZE_MODAL));
+
+    $(this).on("click", function () {
+      modal.show();
     });
   });
 });
