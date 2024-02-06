@@ -8,7 +8,7 @@ const MAGIC_NUMBER = 1;
 
 const TOTAL_CARDS = 4;
 
-const EXPECT_WIN_PERCENT = 0.2;
+const EXPECT_WIN_PERCENT = 0.4;
 
 const TOTAL_RANDOM_NUMBER = Math.floor(TOTAL_CARDS / EXPECT_WIN_PERCENT);
 
@@ -16,11 +16,7 @@ const PRIZE_MODAL = "#prize-modal";
 
 const bingo = {
   text: "Chúc mừng bạn!",
-  images: [
-    "water-dragon-transformed.jpg",
-    "fire-dragon-transformed.jpg",
-    "plant-dragon-transformed.jpg",
-  ],
+  images: ["water-dragon-transformed.jpg", "fire-dragon-transformed.jpg", "plant-dragon-transformed.jpg"],
 };
 
 $(window).on("load", () => {
@@ -71,9 +67,7 @@ $("[id^=envelope]").each(function () {
     });
 
     const text = bingo.text;
-    const imageSrc =
-      pathPrefix +
-      bingo.images[Math.floor(Math.random() * bingo.images.length)];
+    const imageSrc = pathPrefix + bingo.images[Math.floor(Math.random() * bingo.images.length)];
 
     $(this).addClass("prize");
 
