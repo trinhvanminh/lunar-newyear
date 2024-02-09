@@ -8,7 +8,7 @@ const MAGIC_NUMBER = 1;
 
 const TOTAL_CARDS = 4;
 
-const EXPECT_WIN_PERCENT = 0.2;
+const EXPECT_WIN_PERCENT = 0.9;
 
 const TOTAL_RANDOM_NUMBER = Math.floor(TOTAL_CARDS / EXPECT_WIN_PERCENT);
 
@@ -76,6 +76,9 @@ $("[id^=envelope]").each(function () {
       bingo.images[Math.floor(Math.random() * bingo.images.length)];
 
     $(this).addClass("prize");
+
+    $(this).children(".click").removeClass("hidden");
+    $(this).children(".click").addClass("flex");
 
     $(letterElm).children(".text").text(text);
 

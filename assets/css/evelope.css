@@ -80,6 +80,7 @@
   top: 0;
   transform-origin: top;
   transition: 0.4s;
+  /* z-index: ; */
 }
 
 .shadow {
@@ -111,6 +112,7 @@
 
 .envelope.open .top {
   transform: rotateX(160deg);
+  z-index: -1;
 }
 
 .envelope.open .letter {
