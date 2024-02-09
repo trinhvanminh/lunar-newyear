@@ -18,6 +18,13 @@ const envelopeContents = [
 ];
 
 $(document).ready(() => {
+  const mobileMedia = window.matchMedia("(max-width: 767px)");
+
+  if (mobileMedia.matches) {
+    window.location.href = "/2024";
+    return;
+  }
+
   function shuffle(array) {
     let currentIndex = array.length,
       randomIndex;
@@ -26,7 +33,10 @@ $(document).ready(() => {
       randomIndex = Math.floor(Math.random() * currentIndex);
       currentIndex--;
 
-      [array[currentIndex], array[randomIndex]] = [array[randomIndex], array[currentIndex]];
+      [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex],
+        array[currentIndex],
+      ];
     }
 
     return array;
@@ -35,7 +45,10 @@ $(document).ready(() => {
   const envelopeImages = shuffle([1, 2, 3, 4, 5, 6, 7, 8]);
 
   for (var i = 0; i < 8; i++) {
-    $(`#envelope-${i + 1} img`).attr("src", `../assets/images/${envelopeImages[i]}.svg`);
+    $(`#envelope-${i + 1} img`).attr(
+      "src",
+      `../assets/images/${envelopeImages[i]}.svg`
+    );
   }
 
   for (var i = 0; i < 8; i++) {
@@ -44,7 +57,9 @@ $(document).ready(() => {
         play();
       }
 
-      $(this).removeClass("transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300");
+      $(this).removeClass(
+        "transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300"
+      );
 
       $(this).addClass("bg-[#ffefe0] transition duration-300 delay-200");
       $(this).css("transform", "rotateY(180deg)");
@@ -55,8 +70,8 @@ $(document).ready(() => {
       setTimeout(() => {
         $(this).css("transform", "rotateY(360deg)");
         $(this).append(
-          `<div class="absolute inset-4 text-[#562903]">
-            <p>${messages[i]}</p> 
+          `<div class="absolute inset-0 p-1 sm:inset-4 text-[#562903]">
+            <p class="h-[72%] overflow-hidden">${messages[i]}</p> 
             <div class="pt-8 text-right">
               <button onclick="window.location.href='/2024'" type="button" class="text-white bg-yellow-600 hover:bg-yellow-700 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center me-2 dark:bg-yellow-500 dark:hover:bg-yellow-600 dark:focus:ring-yellow-700">
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
